@@ -1,5 +1,5 @@
 # david_analysis
-R script for the DAVID Bioinformatics analysis. This project is based on the RDAVIDWebService and org.Hs.eg.db. The input data are the Multiple Proteins by Sequences. Since David is temporarily not support OFFICAL SYMBOL ID on RDAVIDWebService, so the SYMBOL_ID have to convert to ENTREZ_ID.Aand you can get the FuncAnnotChart FuncAnnotClust FuncAnnotTable analysis from the DAVID Bioinformatics analysis API.
+R script for the DAVID Bioinformatics analysis. This project is based on the RDAVIDWebService and org.Hs.eg.db. The input data are the Multiple Proteins by Sequences. Since David is temporarily not support OFFICAL SYMBOL ID on RDAVIDWebService, so the SYMBOL_ID have to convert to ENTREZ_ID. You can get the FuncAnnotChart FuncAnnotClust FuncAnnotTable analysis from the DAVID Bioinformatics analysis API after running.
 
 You can find detailed information on https://david.ncifcrf.gov/content.jsp?file=DAVID_API.html
 
