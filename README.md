@@ -5,11 +5,17 @@ You can find detailed information on https://david.ncifcrf.gov/content.jsp?file=
 
 ## steps
 1.register your email address on https://david.ncifcrf.gov/webservice/register.htm
+
 2.replace email address with your registered address, modified input and output path in script:
+
   setwd("/path/")
+  
   email='your email address'
+  
   FuncAnnotChart_names <- paste("/output/FuncAnnotChart/",filenames[i])
+  
   FuncAnnotClust_names <- paste("/output/FuncAnnotClust/",filenames[i])
+  
   FuncAnnotTable_names <- paste("/output/FuncAnnotTable/",filenames[i])
 
-## You can put multiple input files in the input folder and get the results for each one. For the input format, please refer example_input.txt
+##You can put multiple input files in the input folder and get the results for each one. For the input format, please refer example_input.txt
