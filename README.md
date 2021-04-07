@@ -1,18 +1,16 @@
 # david_analysis
+R script for the DAVID Bioinformatics analysis. This project is based on the RDAVIDWebService and org.Hs.eg.db. The input data are the Multiple Proteins by Sequences. Since David not support OFFICAL SYMBOL ID on RDAVIDWebService, so the SYMBOL_ID have to convert to ENTREZ_ID.Aand you can get the FuncAnnotChart FuncAnnotClust FuncAnnotTable analysis from the DAVID Bioinformatics analysis API.
 
-convert ENTREZ_ID to SYMBOL_ID
-FuncAnnotChart FuncAnnotClust FuncAnnotTable 
+You can find detailed information on https://david.ncifcrf.gov/content.jsp?file=DAVID_API.html
 
-R script for the DAVID Bioinformatics analysis. This project is based on the string-db API. The input data are the Multiple Proteins by Sequences, and you can get the enrichment analysis from the string-db.
 
-You can put multiple input files in the input folder and get the results for each one.
+# STEPS
+1.register your email address on https://david.ncifcrf.gov/webservice/register.htm
+2.replace email address with your registered address, modified input and output path in script:
+  setwd("/path/")
+  email='your email address'
+  FuncAnnotChart_names <- paste("/output/FuncAnnotChart/",filenames[i])
+  FuncAnnotClust_names <- paste("/output/FuncAnnotClust/",filenames[i])
+  FuncAnnotTable_names <- paste("/output/FuncAnnotTable/",filenames[i])
 
-modified input and output path in script:
-input='/path'
-
-string_db_output='/stringdb/output'
-
-run the script:
-chmod u+x string-db.sh
-
-./string-db.sh
+##You can put multiple input files in the input folder and get the results for each one. For the input format, please refer example_input.txt
