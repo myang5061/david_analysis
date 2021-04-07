@@ -8,7 +8,6 @@ david <- DAVIDWebService(email='your email address',
 hs <- org.Hs.eg.db
 David_analysis<-function(filenames,david, hs){
   for(i in 1:length(filenames)) {
-    #filenames[i] <- paste("/gpfs/gibbs/pi/gerstein/my435/covid_0319/topPhidata/",filenames[i],sep='')
     t <- read.table(filenames[i]) # load file
     input_data_as_c <- as.character(t[,])
     to_entrez_id <- select(hs, 
@@ -24,9 +23,9 @@ David_analysis<-function(filenames,david, hs){
     
     setAnnotationCategories(david, c("GAD_DISEASE","GOTERM_BP_DIRECT", "GOTERM_MF_DIRECT", "GOTERM_CC_DIRECT","BIOCARTA","KEGG_PATHWAY","REACTOME_PATHWAY"))
     
-    FuncAnnotChart_names <- paste("/gpfs/gibbs/pi/gerstein/my435/covid_0319/topPhidata_david_output/FuncAnnotChart/",filenames[i])
-    FuncAnnotClust_names <- paste("/gpfs/gibbs/pi/gerstein/my435/covid_0319/topPhidata_david_output/FuncAnnotClust/",filenames[i])
-    FuncAnnotTable_names <- paste("/gpfs/gibbs/pi/gerstein/my435/covid_0319/topPhidata_david_output/FuncAnnotTable/",filenames[i])
+    FuncAnnotChart_names <- paste("/output/FuncAnnotChart/",filenames[i])
+    FuncAnnotClust_names <- paste("/output/FuncAnnotClust/",filenames[i])
+    FuncAnnotTable_names <- paste("/output/FuncAnnotTable/",filenames[i])
     
     # Get functional annotation chart as R object.
     FuncAnnotChart <- getFunctionalAnnotationChart(david)
