@@ -3,8 +3,7 @@ R script for the DAVID Bioinformatics analysis. This project is based on the RDA
 
 You can find detailed information on https://david.ncifcrf.gov/content.jsp?file=DAVID_API.html
 
-
-# STEPS
+## steps
 1.register your email address on https://david.ncifcrf.gov/webservice/register.htm
 2.replace email address with your registered address, modified input and output path in script:
   setwd("/path/")
@@ -13,4 +12,4 @@ You can find detailed information on https://david.ncifcrf.gov/content.jsp?file=
   FuncAnnotClust_names <- paste("/output/FuncAnnotClust/",filenames[i])
   FuncAnnotTable_names <- paste("/output/FuncAnnotTable/",filenames[i])
 
-##You can put multiple input files in the input folder and get the results for each one. For the input format, please refer example_input.txt
+## You can put multiple input files in the input folder and get the results for each one. For the input format, please refer example_input.txt
